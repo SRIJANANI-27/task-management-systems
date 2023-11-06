@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="static/admin.css">
+    <title>admin</title>
+</head>
+<body>
+   <div class="container">
+        <div class="menu">
+            <i class="fa-solid fa-bars" style="color: black"></i>
+        </div> 
+    <div class="left">
+        <nav>  
+            <ul>
+                <div class="top">
+                    <div class="top">
+                        
+                    <div class="taskify">
+                        <h1>Taskify</h1>
+                    </div>
+                    </div>
+                    </div>
+                     
+               
+                
+                <li><a href="#dashboard"><img src="assests/project-management.png">Dashboard</a></li>
+                <li><a href="#user"><img src="assests/timeline.png">Users</a></li>
+                <!-- <li><a href="#report"><img src="assests/schedule.png">Settings</a></li> -->
+                <li><a href="#notificate"><img src="assests/home-page.png">Notfication</a></li>
+                <li><a href="#feedback"><img src="assests/schedule.png">Security</a></li>
+                <div class="line"><hr></div>
+            </ul>
+            <div class="down-img">
+            <img src="assests/settings.png" alt="">
+            <img class="logout" src="assests/logout.png" alt="">
+            <img class="jlogo" src="assests/letter-j.png" alt="" >
+            </div>
+            <!-- drop -->
+            <div class="dropdown">
+                <img class="down" src="assests/downward-arrow.png" alt="">
+           
+                <div class="dropdown-content">
+                   
+                        <img src="assests/j.png" alt="">
+                        <h4>Nishanthi</h4>
+                        <p>nisha2003@gmail...</p>
+                        <p>User ID: 60024608243</p>
+                    
+                    <hr style="position: relative; bottom: 40px;">
+                    <div class="acc">
+                        <div class="account"> 
+                            <img src="assests/aaount.png" alt="" style="height: 20px; width: 20px;">
+                            <p>My Account</p>
+                            <div class="log">
+                                <img src="assests/login (1).png" alt="" style="height: 25px; width: 25px;">
+                                <a href="index.html"><p>logout</p></a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>  
+        </nav> 
+         
+    </div>
+    <div class="right">
+        <!--navbar  -->
+        <div class="first" id="dashboard"><br>
+            <div class="main">
+                <div class="items"><h3>Dashboard</h3></div>
+                <div class="items"><i class="fa-solid fa-magnifying-glass" style="color: #010813;"></i><input type="text" placeholder="search"></div>
+            
+            <div class="submain">
+                <div class="items"><img src="assests/bell.png" alt="" width="20px"></div>
+                <div class="items profile"><img  src="assests/per6.avif" alt="" width="50px" height="50px"></div>
+                <div class="items"><h4>Nishanthi <br> Administrator</h4></div>
+                
+            </div>
+            </div>
+        <!-- navbar ends -->
+                <div class="boxes">
+                    <div class="single">
+                        <img src="assests/3d-setting.png" alt="">
+                        <h2>settings</h2>
+                    </div>
+                    <div class="single">
+                        <img src="assests/customization.png" alt="">
+                        <h2>customization</h2>
+                    </div>
+                    <div class="single">
+                        <img src="assests/security.png" alt="">
+                        <h2>security</h2>
+                    </div>
+                    <div class="single">
+                        <img src="assests/update.png" alt="">
+                        <h2>update</h2>
+                    </div>
+                    <div class="single">
+                        <img src="assests/backup.png" alt="">
+                        <h2>backup</h2>
+                    </div>
+                    <div class="single">
+                        <img src="assests/notification.png" alt="">
+                        <h2>notification</h2>
+                    </div>
+                    <div class="single">
+                        <img src="assests/usermana.png" alt="">
+                        <h2>management</h2>
+                    </div>
+                    <div class="single">
+                        <img src="assests/feedback.png" alt="">
+                        <h2>feedback</h2>
+                    </div>
+                    
+                </div>
+            </div><br>
+<!-- 2nd page -->
+            <div class="first" id="user"><br>
+                <div class="main">
+                    <div class="items"><h3>Create user</h3></div>
+                    <div class="items"><i class="fa-solid fa-magnifying-glass" style="color: #010813;"></i><input type="text" placeholder="search"></div>
+                
+                <div class="submain">
+                    <div class="items"><img src="assests/bell.png" alt="" width="20px"></div>
+                    <div class="items profile"><img  src="assests/per6.avif" alt="" width="50px" height="50px"></div>
+                    <div class="items"><h4>Nishanthi <br> Administrator</h4></div>
+                    
+                </div>
+                </div>
+                <!-- table -->
+
+                <div class="tables">
+                    <table  width="95%" id="createtable">
+                        <tr>
+                            <td style="font-size: 20px;">users</td>
+                            <td colspan="7">
+                                <div class="button_slide slide_right">
+                                    <a href="#" onclick="show()"><i class="fa-solid fa-plus fa-lg" style="color: #010813;"></i>add user</a>
+                                </div>
+                            </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>dob</th>
+                            <th>role</th>
+                            <th colspan="3">action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>janani</td>
+                            <td>srija@gmail.com</td>
+                            <td>27.2.2003</td>
+                            <td>user</td>
+                            <td style="text-align: right;"><img src="assests/edit.png" alt="" width="20px"></td>
+                            <td style="text-align: center"><img src="assests/eye.png" alt="" width="20px"></td>
+                            <td style="text-align: left;"><img src="assests/delete (1).png" alt="" width="20px"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ramya</td>
+                            <td>janani@gmail.com</td>
+                            <td>20.2.2003</td>
+                            <td>user</td>
+                            <td style="text-align: right;"><img src="assests/edit.png" alt="" width="20px"></td>
+                            <td style="text-align: center"><img src="assests/eye.png" alt="" width="20px"></td>
+                            <td style="text-align: left;"><img src="assests/delete (1).png" alt="" width="20px"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>thiya</td>
+                            <td>srija@gmail.com</td>
+                            <td>17.2.2003</td>
+                            <td>manager</td>
+                            <td style="text-align: right;"><img src="assests/edit.png" alt="" width="20px"></td>
+                            <td style="text-align: center"><img src="assests/eye.png" alt="" width="20px"></td>
+                            <td style="text-align: left;"><img src="assests/delete (1).png" alt="" width="20px"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>yathra</td>
+                            <td>tja@gmail.com</td>
+                            <td>22.3.2003</td>
+                            <td>manager</td>
+                            <td style="text-align: right;"><img src="assests/edit.png" alt="" width="20px"></td>
+                            <td style="text-align: center"><img src="assests/eye.png" alt="" width="20px"></td>
+                            <td style="text-align: left;"><img src="assests/delete (1).png" alt="" width="20px"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>kishore</td>
+                            <td>srija.janani2003@gmail.com</td>
+                            <td>11.9.2003</td>
+                            <td>user</td>
+                            <td style="text-align: right;"><img src="assests/edit.png" alt="" width="20px"></td>
+                            <td style="text-align: center"><img src="assests/eye.png" alt="" width="20px"></td>
+                            <td style="text-align: left;"><img src="assests/delete (1).png" alt="" width="20px"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>janani</td>
+                            <td>abc@gmail.com</td>
+                            <td>27.2.2003</td>
+                            <td>manager</td>
+                            <td style="text-align: right;"><img src="assests/edit.png" alt="" width="20px"></td>
+                            <td style="text-align: center"><img src="assests/eye.png" alt="" width="20px"></td>
+                            <td style="text-align: left;"><img src="assests/delete (1).png" alt="" width="20px"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="containers" id="image">
+                    <h2> New User </h2>
+                    <form id="registration-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-roles">User Roles:</label>
+                            <select id="user-roles" name="user-roles" required>
+                                <option value="admin">Admin</option>
+                                <option value="user">User</option>
+                                <option value="guest">Manager</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">User id:</label>
+                            <input type="text" id="user" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Password:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                        <button type="submit">Create user</button>
+                    </form>
+                </div>
+            
+                <div id="output" class="containers" style="display: none;" onclick="my()">
+                    <h3>Created Successfully</h3>
+                    <p>Name: <span id="output-name"></span></p>
+                    <p>Email: <span id="output-email"></span></p>
+                    <p>Date of Birth: <span id="output-dob"></span></p>
+                    <p>User Role: <span id="output-user-roles"></span></p>
+                </div>
+           
+                
+            </div><br>
+            <div class="first" id="notificate"><br>
+                <div class="main">
+                    <div class="items"><h3>settings</h3></div>
+                    <div class="items"><i class="fa-solid fa-magnifying-glass" style="color: #010813;"></i><input type="text" placeholder="search"></div>
+                
+                <div class="submain">
+                    <div class="items"><img src="assests/bell.png" alt="" width="20px"></div>
+                    <div class="items profile"><img  src="assests/per6.avif" alt="" width="50px" height="50px"></div>
+                    <div class="items"><h4>Nishanthi <br> Administrator</h4></div>
+                    
+                </div>
+                </div>
+            <div class="notification">
+                <div class="frstnotify">
+                    <table id="notify"  width="100%">
+                        <tr>
+                            <th><img src="assests/check-mark.png" alt="" width="30px" style="margin-right: 10px;">Task Settings</th>
+                        </tr>
+                        <tr>
+                            <td>notify me for tasks</td>
+                            <td>asiigned me</td>
+                            <td>i Created</td>
+                        </tr>
+                        <tr>
+                            <td>task settings</td>
+                            <td><img src="assests/toggle-on.png" alt="" width="50px"></td>
+                            <td><img src="assests/toggle-off.png" alt="" width="50px"></td>
+                        </tr>
+                        <tr>
+                            <td>managers</td>
+                            <td><img src="assests/toggle-on.png" alt="" width="50px"></td>
+                            <td><img src="assests/toggle-off.png" alt="" width="50px"></td>
+                        </tr>
+                        <tr>
+                            <td>team members</td>
+                            <td><img src="assests/toggle-on.png" alt="" width="50px"></td>
+                            <td><img src="assests/toggle-off.png" alt="" width="50px"></td>
+                        </tr>
+                        <tr>
+                            <td>individuals</td>
+                            <td><img src="assests/toggle-on.png" alt="" width="50px"></td>
+                            <td><img src="assests/toggle-off.png" alt="" width="50px"></td>
+                        </tr>
+                        <tr>
+                            <td>assigned</td>
+                            <td><img src="assests/toggle-on.png" alt="" width="50px"></td>
+                            <td><img src="assests/toggle-off.png" alt="" width="50px"></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="sendnotify">
+                    
+                    <table id="notify"  width="100" class="second">
+                            <tr>
+                                <th><img src="assests/forum.png" alt="" width="30px" style="margin-right: 10px;">Forum Notifications</th>
+                            </tr>
+                            <tr>
+                                <td>NOTIFY USER</td>
+                                <td>on/off</td>
+                            </tr>
+                            <tr>
+                                <td>Notify for all forums and their comments</td>
+                                <td><img src="assests/toggle-on.png" alt="" width="50px"></td>
+                               
+                            </tr>
+                            <tr>
+                                <td>Notify on announcement forums </td>
+                                <td><img src="assests/toggle-off.png" alt="" width="50px"></td>
+                               
+                            </tr>
+                            <tr>
+                                <td>Notify on announcement comments</td>
+                                <td><img src="assests/toggle-off.png" alt="" width="50px"></td>
+                               
+                            </tr>
+                            
+                        </table>
+
+                </div>
+                <div class="thrdnotify">
+                    <table id="notify"  width="100%">
+                        <tr>
+                            <th><img src="assests/mail.png" alt="" width="30px" style="margin-right: 10px;">mail Notifications</th>
+                        </tr>
+                        <tr>
+                            <td>notify me for tasks</td>
+                            <td>asiigned me</td>
+                            <td>i Created</td>
+                        </tr>
+                        <tr>
+                            <td>frequency</td>
+                            <td><select id="frequency">
+                                <option>frequency</option>
+                                <option>weekly</option>
+                                <option>daily</option>
+                            </select></td>
+                        
+                        <td><img src="assests/toggle-on.png" alt="" width="50px"></td>
+                        </tr>
+                        <tr>
+                            <td>assigned</td>
+                            <td><img src="assests/toggle-on.png" alt="" width="50px"></td>
+                            <td><img src="assests/toggle-off.png" alt="" width="50px"></td>
+                        </tr>
+                    </table>
+                    <table id="notify"  width="100%">
+                        <tr>
+                            <th><img src="assests/milestone.png" alt="" width="30px" style="margin-right: 10px;">milestone Notifications</th>
+                        </tr>
+                        <tr>
+                            <td>notify me for tasks</td>
+                            <td>asiigned me</td>
+                            <td>i Created</td>
+                        </tr>
+                        <tr>
+                            <td>assigned</td>
+                            <td><img src="assests/toggle-on.png" alt="" width="50px"></td>
+                            <td><img src="assests/toggle-off.png" alt="" width="50px"></td>
+                        </tr>
+                        <tr>
+                            <td>assigned</td>
+                            <td><img src="assests/toggle-on.png" alt="" width="50px"></td>
+                            <td><img src="assests/toggle-off.png" alt="" width="50px"></td>
+                        </tr>
+                    </table>
+                   
+                </div>
+            </div>
+        </div><br>
+
+<!-- 4th page -->
+            <div class="first" id="feedback"><br>
+                <div class="main">
+                    <div class="items"><h3>Security</h3></div>
+                    <div class="items"><i class="fa-solid fa-magnifying-glass" style="color: #010813;"></i><input type="text" placeholder="search"></div>
+                
+                <div class="submain">
+                    <div class="items"><img src="assests/bell.png" alt="" width="20px"></div>
+                    <div class="items profile"><img  src="assests/per6.avif" alt="" width="50px" height="50px"></div>
+                    <div class="items"><h4>Nishanthi <br> Administrator</h4></div>
+                    
+                </div>
+                </div>
+                <div class="menus">
+                    <div class="order blue">
+                        <img src="assests/light-bulb.png" alt="">
+                        knowledge base
+                    </div>
+                    <div class="order yellow">
+                        <img src="assests/report.png" alt="">
+                        report issues
+                    </div>
+                    <div class="order green">
+                        <img src="assests/best-customer-experience.png" alt="">
+                        feedback
+                    </div>
+                    <div class="order violet">
+                        <img src="assests/app.png" alt=""><br>
+                        rate app
+                    </div>
+                </div>
+            <div class="content">
+                <h2 style="position:relative; top: 15px;">Security</h2>
+                <div class="para">
+                    
+               
+                    <div class="check">
+                    <h3>Notify me when...</h3>
+                    <form action="/action_page.php">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Daily updates</label><br><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> new event created</label><br><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> Added to new team</label><br><br>
+                    </form>
+                    </div>
+                    <div class="not">
+                    
+                        <h3>settings</h3>
+                        <label for="cars">Apperance</label>
+
+                        <select id="cars">
+                            <option value="dark">dark</option>
+                            <option value="li">light</option>
+                            <option value="de">default</option>
+                        </select><br><br>
+                        <label for="lang">languages</label>
+
+                        <select id="cars">
+                            <option value="en">english</option>
+                            <option value="ta">tamil</option>
+                            <option value="opel">hindi</option>
+                            <option value="ma">malayalam</option>
+                        </select>
+                    </div>
+                    
+                    <div class="feed">
+                   
+                      <h3>notifications</h3>
+                    <form action="/action_page.php">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Get email new feedback comes in</label><br><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2">Security alerts</label><br>
+                    </form><br>
+                      
+                    </div>
+                    <div class="rply">  
+               
+                    <h3>quick reply</h3>
+                    <div class="flex">
+                    <img src="assests/toggle-on.png" alt="" width="30px">
+                    send responses to users automatically<br>
+                    </div>
+                    <div class="flex">
+                        <img src="assests/toggle-off.png" alt="" width="30px">
+                        send thankyou to users registered<br>
+                        
+                    </div>
+                    <div class="setings">
+                        <h3>security setting</h3>
+                        <div class="flex">
+                            <img src="assests/toggle-off.png" alt="" width="30px">
+                            two-factor authenciation<br>
+                        </div>
+                        <div class="flex">
+                            <img src="assests/toggle-on.png" alt="" width="30px">
+                            allow to change password<br>
+                        </div>
+                    
+                   
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            </div>
+</div>
+</div>
+
+
+
+<!-- script **** -->
+                <script>
+                    document.getElementById("registration-form").addEventListener("submit", function(event) {
+                        event.preventDefault();
+            
+                        const name = document.getElementById("name").value;
+                        const email = document.getElementById("email").value;
+                        const dob = document.getElementById("dob").value;
+                        const userRoles = document.getElementById("user-roles").value;
+                        const password = document.getElementById("user").value;
+                        const confirmPass = document.getElementById("confirm-password").value;
+            
+                       
+                        document.getElementById("output-name").textContent = name;
+                        document.getElementById("output-email").textContent = email;
+                        document.getElementById("output-dob").textContent = dob;
+                        document.getElementById("output-user-roles").textContent = userRoles;
+            
+                        document.getElementById("registration-form").style.display = "none";
+                        document.getElementById("output").style.display = "block";
+                    });
+                    function show() {
+        /* Access image by id and change 
+        the display property to block*/
+        document.getElementById('image')
+            .style.display = "block";
+        }
+        function my(){
+            document.getElementById('output')
+            .style.display = "none";
+            document.getElementById('image')
+            .style.display = "none";
+        }
+                </script>
+            </div>
+        </div>
+        
+</div>
+</div>
+</body>
+</html>

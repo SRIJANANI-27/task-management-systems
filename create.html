@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="static/create.css">
+    <title>create-tasks</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <i class="fa-solid fa-bars" style="color: black"></i>
+        </div> 
+    <div class="left">
+        <nav>  
+            <ul>
+                <div class="top">
+                    <div class="top">
+                        
+                    <div class="taskify">
+                        <h1>Taskify</h1>
+                    </div>
+                    </div>
+                    </div>
+                     
+               
+                
+                <li><a href="#dashboard"><img src="assests/project-management.png">Dashboard</a></li>
+                <li><a href="#user"><img src="assests/timeline.png">Assigned</a></li>
+                <!-- <li><a href="#report"><img src="assests/schedule.png">Settings</a></li> -->
+                <li><a href="#notificate"><img src="assests/home-page.png">Report</a></li>
+                <li><a href="#feedback"><img src="assests/schedule.png">Performance</a></li>
+                <div class="line"><hr></div>
+            </ul>
+            <div class="down-img">
+            <img src="assests/settings.png" alt="">
+            <img class="logout" src="assests/logout.png" alt="">
+            <img class="jlogo" src="assests/letter-j.png" alt="" >
+            </div>
+            <!-- drop -->
+            <div class="dropdown">
+                <img class="down" src="assests/downward-arrow.png" alt="">
+           
+                <div class="dropdown-content">
+                   
+                        <img src="assests/j.png" alt="">
+                        <h4>janani</h4>
+                        <p>srija.janani2003@gmail...</p>
+                        <p>User ID: 60024608243</p>
+                    
+                    <hr style="position: relative; bottom: 40px;">
+                    <div class="acc">
+                        <div class="account"> 
+                            <img src="assests/aaount.png" alt="" style="height: 20px; width: 20px;">
+                            <p>My Account</p>
+                            <div class="log">
+                                <img src="assests/login (1).png" alt="" style="height: 25px; width: 25px;">
+                                <a href="login.html"><p>login</p></a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>  
+        </nav> 
+         
+    </div>
+    <div class="right">
+        
+        <div class="first" id="dashboard"><br>
+            <div class="main">
+             <div class="items"><h3>tasks</h3></div>
+            <div class="items"><i class="fa-solid fa-magnifying-glass" style="color: #010813;"></i><input type="text" placeholder="search"></div>
+            
+            <div class="submain">
+                <div class="items"><img src="assests/bell.png" alt="" width="20px"></div>
+                <div class="items profile"><img  src="assests/profile.jpg" alt="" width="50px" height="50px"></div>
+                <div class="items"><h4>Monisha manager</h4></div>
+                <div class="items arrow"><img src="assests/down-arrow.png" alt="" width="20px"></div>
+                        </div>
+            </div><br>
+            
+
+<div class="tasks">
+    <div class="task-form">
+        <div class="form-column form1">
+            <h3>Create Task</h3>
+            <form action="submit_task.php" method="post">
+                <div class="form-group">
+                    <label for="task-name">Task Name:</label>
+                    <input type="text" id="task-name" name="task-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" name="end-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="employee">Employee:</label>
+                    <select id="employee" name="employee" required>
+                        <option value="ramya">Ramya</option>
+                        <option value="divya">Divya</option>
+                        <option value="ahalya">Ahalya</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="employee-id">Employee ID:</label>
+                    <input type="text" id="employee-id" name="employee-id" required>
+                </div>
+            </div>
+       
+
+        <div class="form-column form">
+            <div class="form-group">
+                <label for="priority">Priority:</label>
+                <select id="priority" name="priority" required>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="assigned-by">Assigned By:</label>
+                <input type="text" id="assigned-by" name="assigned-by" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Project Notes" rows="5" cols="40"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="upload-file">Upload File:</label>
+                <input type="file" id="upload-file" name="upload-file">
+            </div>
+        </div>
+
+       
+    </div>
+    <div class="button_slide slide_right">
+        <a href="manager.html">create-tasks</a>
+    </div>
+        </form>
+    </div>
+</div>
+    </body>
+    
+    </html>
